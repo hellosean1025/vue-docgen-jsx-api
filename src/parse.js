@@ -3,7 +3,7 @@ import * as utils from './utils';
 import stateDoc from './utils/stateDoc';
 
 export const parse = function (file) {
-  const source = fs.readFileSync (file, {
+  let source = fs.readFileSync (file, {
     encoding: 'utf-8',
   });
   if (source === '') {
